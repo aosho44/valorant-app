@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
 	return (
 		<div>
-			<button>Home</button>
-			<button>Agents</button>
+			<Link to={`/`}>
+				<button>Home</button>
+			</Link>
+			<Link to={`/agents`}>
+				<button>Agents</button>
+			</Link>
 		</div>
 	);
 }
