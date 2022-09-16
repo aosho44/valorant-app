@@ -1,7 +1,8 @@
 import React from 'react';
+import { HomeCard } from '../../styles/homeStyle/HomeCard';
 
 function Home() {
-	return <div>Home</div>;
+	return <HomeCard />;
 }
 
 export default Home;
