@@ -1,4 +1,5 @@
 import { AgentCardDiv, ImageCard } from './AgentCard.styles';
+import { Link } from 'react-router-dom';
 
 import React from 'react';
 
@@ -7,7 +8,9 @@ function AgentCards(props) {
 
 	return (
 		<AgentCardDiv>
-			<ImageCard src={data.displayIcon} alt={data.displayName} />
+			<Link to={`/agents/${data.uuid}`}>
+				<ImageCard src={data.displayIcon} alt={data.displayName} />
+			</Link>
 		</AgentCardDiv>
 	);
 }
