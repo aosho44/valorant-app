@@ -27,6 +27,10 @@ export const AbilityCard = styled.div`
 
 export const AbilityRow = styled.div``;
 
-export const AbilityImage = styled.div``;
+export const AbilityImage = styled.img`
+	background-color: green;
+	width: 100px;
+	height: 100px;
+`;
 
 export const AbilityText = styled.h1``;
