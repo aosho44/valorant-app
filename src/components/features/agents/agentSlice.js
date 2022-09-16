@@ -9,8 +9,17 @@ export const fetchAsyncAgents = createAsyncThunk(
 	}
 );
 
+export const fetchAsyncAgentDetails = createAsyncThunk(
+	'agents/fetchAsyncAgentDetails',
+	async (id) => {
+		const response = await agentApi.get(`${id}`);
+		return await response.data;
+	}
+);
+
 const initialState = {
 	agents: {},
+	agentSelect: {},
 };
 
 const agentSlice = createSlice({
@@ -31,6 +40,11 @@ const agentSlice = createSlice({
 				console.log(payload);
 				return { ...state, agents: payload };
 			})
+			.addCase(fetchAsyncAgentDetails.fulfilled, (state, payload) => {
+				console.log('Fetched Successfully');
+				console.log(payload);
+				return { ...state, agentSelect: payload };
+			})
 			.addCase(fetchAsyncAgents.rejected, () => {
 				console.log('Failed');
 			});
@@ -38,5 +52,6 @@ const agentSlice = createSlice({
 });
 
 export const { addAgents } = agentSlice.actions;
-export const getSingleAgents = (state) => state.agents.agents;
+export const getAllAgents = (state) => state.agents.agents;
+export const getSingleAgents = (state) => state.agents.agentSelect;
 export default agentSlice.reducer;
