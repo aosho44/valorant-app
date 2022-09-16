@@ -1,16 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { getSingleAgents } from '../../features/agents/agentSlice';
+import { getAllAgents } from '../../features/agents/agentSlice';
 import { AgentCards } from '../../styles/agentStyle/AgentCard';
 import { ErrorCards } from '../../styles/errorStyle/ErrorCard';
 import { AgentContainer } from '../../styles/agentStyle/AgentCard.styles';
 
 function Agents() {
-	const agents = useSelector(getSingleAgents);
+	const agents = useSelector(getAllAgents);
 
-	let renderAgents = '';
+	let renderAllAgents = '';
 
-	renderAgents =
+	renderAllAgents =
 		agents?.payload?.status === 200 ? (
 			agents.payload.data.map((agent, index) => {
 				return <AgentCards key={index} data={agent} />;
@@ -23,7 +23,7 @@ function Agents() {
 
 	return (
 		<>
-			<AgentContainer>{renderAgents}</AgentContainer>
+			<AgentContainer>{renderAllAgents}</AgentContainer>
 		</>
 	);
 }
