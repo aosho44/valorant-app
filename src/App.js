@@ -5,6 +5,7 @@ import Footer from './components/pages/Footer/Footer';
 import Header from './components/pages/Header/Header';
 import Home from './components/pages/Home/Home';
 import PageNotFound from './components/pages/PageNotFound/PageNotFound';
+import GlobalStyle from './components/styles/mainWebsiteStyle/MainCard.styles';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
 			<Footer />
+			<GlobalStyle />
 		</div>
 	);
 }
