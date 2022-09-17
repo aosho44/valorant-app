@@ -3,7 +3,7 @@ import background from '../../../apps/images/valorant-background.jpg';
 
 const GlobalStyle = createGlobalStyle`
 
-    @import url('http://fonts.cdnfonts.com/css/valorant');
+    
 	
     body{
         font-family: 'VALORANT', sans-serif;
