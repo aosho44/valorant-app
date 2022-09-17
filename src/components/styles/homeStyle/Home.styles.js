@@ -1,11 +1,24 @@
 import styled from 'styled-components';
 
-export const HomeImage = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	filter: blur(1px);
+export const HomeButton = styled.button`
+	border: 10px;
+	font-family: 'VALORANT', sans-serif;
+	font-size: 100px;
+	padding: 10px;
+	background: transparent;
+	margin-left: 10px;
+	cursor: pointer;
+
+	&:hover {
+	}
 `;
 export const HomeDiv = styled.div`
-	height: 90vh;
+	height: 93vh;
+`;
+
+export const ButtonDiv = styled.div`
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-around;
 `;

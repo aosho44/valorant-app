@@ -1,8 +1,26 @@
-import { HomeDiv } from './Home.styles';
+import { ButtonDiv, HomeButton, HomeDiv } from './Home.styles';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomeCard() {
-	return <HomeDiv></HomeDiv>;
+	return (
+		<HomeDiv>
+			<ButtonDiv>
+				<Link to={`/`}>
+					<HomeButton>Home</HomeButton>
+				</Link>
+				<Link to={`/agents`}>
+					<HomeButton>Agents</HomeButton>
+				</Link>
+				<Link to={`/agents`}>
+					<HomeButton>Maps</HomeButton>
+				</Link>
+				<Link to={`/agents`}>
+					<HomeButton>Weapons</HomeButton>
+				</Link>
+			</ButtonDiv>
+		</HomeDiv>
+	);
 }
 
 export { HomeCard };
