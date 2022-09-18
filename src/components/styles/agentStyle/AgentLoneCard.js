@@ -7,33 +7,47 @@ import {
 	AbilityText,
 	AbilityRow,
 	AbilityImage,
+	AbilityImageText,
+	BackgroundImageDiv,
+	AgentsName,
 } from './AgentLoneCard.styles';
 
 import React from 'react';
 
 function AgentsLoneCard(props) {
 	const { data } = props;
-	// const { abilities:{} } = data;
-
-	const ability = Object.values(data.abilities[0].displayName);
-	console.log(ability);
+	const bg1 = '#' + data.backgroundGradientColors[1];
+	const bg2 = '#' + data.backgroundGradientColors[2];
 
 	return (
-		<AgentCardDiv>
-			<ImageCard src={data.fullPortrait} alt={data.displayName} />
-			<DescriptionCard>
+		<AgentCardDiv bgColour1={bg1}>
+			<BackgroundImageDiv image={data.background}>
+				<ImageCard src={data.fullPortrait} alt={data.displayName} />
+			</BackgroundImageDiv>
+			<DescriptionCard bgColour1={bg2}>
+				<AgentsName>{data.displayName}</AgentsName>
 				<DescriptionText>{data.description}</DescriptionText>
+
 				<AbilityCard>
 					<AbilityRow>
-						<AbilityImage src={data.abilities[0].displayIcon} alt="" />
-						<AbilityImage src={data.abilities[1].displayIcon} alt="" />
-						<AbilityImage src={data.abilities[2].displayIcon} alt="" />
-						<AbilityImage src={data.abilities[3].displayIcon} alt="" />
+						<AbilityImageText>
+							<AbilityImage src={data.abilities[0].displayIcon} alt="" />
+							<AbilityText>{data.abilities[0].displayName}</AbilityText>
+						</AbilityImageText>
+						<AbilityImageText>
+							<AbilityImage src={data.abilities[1].displayIcon} alt="" />
+							<AbilityText>{data.abilities[1].displayName}</AbilityText>
+						</AbilityImageText>
+						<AbilityImageText>
+							<AbilityImage src={data.abilities[2].displayIcon} alt="" />
+							<AbilityText>{data.abilities[2].displayName}</AbilityText>
+						</AbilityImageText>
+						<AbilityImageText>
+							<AbilityImage src={data.abilities[3].displayIcon} alt="" />
+							<AbilityText>{data.abilities[3].displayName}</AbilityText>
+						</AbilityImageText>
 					</AbilityRow>
-					<AbilityText>{data.abilities[0].displayName}</AbilityText>
-					<AbilityText>{data.abilities[1].displayName}</AbilityText>
-					<AbilityText>{data.abilities[2].displayName}</AbilityText>
-					<AbilityText>{data.abilities[3].displayName}</AbilityText>
+					<AbilityImageText></AbilityImageText>
 				</AbilityCard>
 			</DescriptionCard>
 		</AgentCardDiv>

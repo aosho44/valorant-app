@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { fetchAsyncAgentDetails } from '../../features/agents/agentSlice';
 import SingleAgents from './SingleAgents';
 import Header from '../Header/Header';
+import { SingleAgentContainer } from '../../styles/agentStyle/AgentLoneCard.styles';
 
 function SingleAgentsView() {
 	const { id } = useParams();
@@ -16,10 +17,10 @@ function SingleAgentsView() {
 	}, [dispatch, id]);
 
 	return (
-		<>
+		<SingleAgentContainer>
 			<Header />
 			<SingleAgents />
-		</>
+		</SingleAgentContainer>
 	);
 }
 
