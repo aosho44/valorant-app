@@ -12,10 +12,10 @@ function HomeCard() {
 				<Link to={`/agents`}>
 					<HomeButton>Agents</HomeButton>
 				</Link>
-				<Link to={`/agents`}>
+				<Link to={`/maps`}>
 					<HomeButton>Maps</HomeButton>
 				</Link>
-				<Link to={`/agents`}>
+				<Link to={`/weapons`}>
 					<HomeButton>Weapons</HomeButton>
 				</Link>
 			</ButtonDiv>

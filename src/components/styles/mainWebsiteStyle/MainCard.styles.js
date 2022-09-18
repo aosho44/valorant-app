@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../../../apps/images/valorant-background-2.jpg';
+import background from '../../../apps/images/valorant-background.jpg';
 import font1 from '../../../apps/fonts/valorant_font-webfont.woff2';
 import font2 from '../../../apps/fonts/valorant_font-webfont.woff';
 
