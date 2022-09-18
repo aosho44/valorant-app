@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../../../apps/images/valorant-background.jpg';
+import background from '../../../apps/images/valorant-background-2.jpg';
 import font from '../../../apps/fonts/Valorant-Font.woff';
 
 const GlobalStyle = createGlobalStyle`
@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
 	
     body{
         font-family: 'myFont';
+        padding: 0;
+        margin: 0;
         
 	}
     html{
