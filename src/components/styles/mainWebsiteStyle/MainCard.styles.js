@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'valorantregular';
         padding: 0;
         margin: 0;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         
 	}
     html{
@@ -27,8 +27,6 @@ const GlobalStyle = createGlobalStyle`
         -webkit-background-size: cover;
         background-size: cover;
         background: url(${background}) no-repeat center center fixed;
-        overflow-y: scroll;
-        overflow-x: scroll;
         
         
 
