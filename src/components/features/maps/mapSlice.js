@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import mapApi from '../../apis/mapApi';
+import mapsApi from '../../apis/mapsApi';
 
 export const fetchAsyncMaps = createAsyncThunk(
 	'maps/fetchAsyncMaps',
 	async () => {
-		const response = await mapApi.get();
+		const response = await mapsApi.get();
 		return await response.data;
 	}
 );
