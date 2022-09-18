@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 import background from '../../../apps/images/valorant-background.jpg';
-// import font from "../../../apps/fonts/"
+import font from '../../../apps/fonts/Valorant-Font.woff';
 
 const GlobalStyle = createGlobalStyle`
 
     @font-face {
         font-family: "myFont" ;
-        src: url("../../../apps/fonts/Valorant-Font.woff") format("woff");
+        src: url(${font}) format("woff");
     }
 	
     body{
