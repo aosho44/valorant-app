@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
 	
     body{
-        font-family: 'VALORANT', sans-serif;
+        font-family: 'myFont';
         
 	}
     html{
