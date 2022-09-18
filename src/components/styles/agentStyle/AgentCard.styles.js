@@ -10,13 +10,13 @@ export const AgentCardDiv = styled.div`
 `;
 
 export const ImageCard = styled.img`
-	width: 300px;
-	height: 300px;
-	border-radius: 50px;
-	position: relative;
 	background-color: black;
-	transition: all 0.3s;
+	border-radius: 50px;
 	cursor: pointer;
+	height: 300px;
+	position: relative;
+	transition: all 0.3s;
+	width: 300px;
 
 	&:hover {
 		filter: blur(5px);
@@ -25,20 +25,21 @@ export const ImageCard = styled.img`
 
 export const ImageName = styled.h1`
 	color: white;
+	cursor: pointer;
 	font-size: 40px;
 	margin: 0;
 	opacity: 0;
 	position: relative;
 	text-align: center;
-	transition: 0.4s;
 	transform: translateY(-170px);
+	transition: 0.4s;
 `;
 
 export const AgentContainer = styled.div`
+	align-items: center;
+	column-gap: 50px;
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 50px;
-	align-items: center;
 	justify-content: center;
 `;
 
