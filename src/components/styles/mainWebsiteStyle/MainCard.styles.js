@@ -18,14 +18,17 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'valorantregular';
         padding: 0;
         margin: 0;
+        flex-wrap: wrap;
         
 	}
     html{
-        background: url(${background}) no-repeat center center fixed;
-        -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+        -webkit-background-size: cover;
         background-size: cover;
+        background: url(${background}) no-repeat center center fixed;
+        overflow-y: scroll;
+        overflow-x: scroll;
         
         
 
