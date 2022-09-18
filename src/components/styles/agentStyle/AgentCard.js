@@ -8,7 +8,10 @@ function AgentCards(props) {
 
 	return (
 		<AgentCardDiv>
-			<Link to={`/agents/${data.uuid}`}>
+			<Link
+				to={`/agents/${data.uuid}`}
+				style={{ textDecoration: 'none', outline: 'none', cursor: 'default' }}
+			>
 				<ImageCard src={data.displayIcon} alt={data.displayName} />
 				<ImageName>{data.displayName}</ImageName>
 			</Link>

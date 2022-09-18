@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 export const AgentCardDiv = styled.div`
 	margin-top: 30px;
-	cursor: pointer;
-	transition: all 0.3s;
+	transition: all 0.5s;
 
-	&:hover {
-		transform: scale(1.1);
-		transition: all 0.3s;
+	&:hover h1 {
+		opacity: 1;
 	}
 `;
 
@@ -17,20 +15,29 @@ export const ImageCard = styled.img`
 	border-radius: 50px;
 	position: relative;
 	background-color: black;
+	transition: all 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		filter: blur(5px);
+	}
 `;
 
 export const ImageName = styled.h1`
 	color: white;
-	text-align: center;
-	position: relative;
-	bottom: 170px;
+	font-size: 40px;
 	margin: 0;
+	opacity: 0;
+	position: relative;
+	text-align: center;
+	transition: 0.4s;
+	transform: translateY(-170px);
 `;
 
 export const AgentContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	gap: 50px;
+	column-gap: 50px;
 	align-items: center;
 	justify-content: center;
 `;

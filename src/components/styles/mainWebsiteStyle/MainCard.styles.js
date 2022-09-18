@@ -1,9 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 import background from '../../../apps/images/valorant-background.jpg';
+// import font from "../../../apps/fonts/"
 
 const GlobalStyle = createGlobalStyle`
 
-    
+    @font-face {
+        font-family: "myFont" ;
+        src: url("../../../apps/fonts/Valorant-Font.woff") format("woff");
+    }
 	
     body{
         font-family: 'VALORANT', sans-serif;
@@ -15,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        
         
         
 
