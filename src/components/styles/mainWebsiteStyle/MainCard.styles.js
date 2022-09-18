@@ -11,9 +11,9 @@ const GlobalStyle = createGlobalStyle`
          url(${font2}) format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-	
+
+
     body{
         font-family: 'valorantregular';
         padding: 0;
@@ -27,9 +27,6 @@ const GlobalStyle = createGlobalStyle`
         -webkit-background-size: cover;
         background-size: cover;
         background: url(${background}) no-repeat center center fixed;
-        
-        
-
     }
 `;
 
