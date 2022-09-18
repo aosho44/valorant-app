@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeButton = styled.button`
 	border: 10px;
-	font-family: 'VALORANT', sans-serif;
+	font-family: valorantregular;
 	font-size: 100px;
 	padding: 10px;
 	background: transparent;

@@ -1,16 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 import background from '../../../apps/images/valorant-background-2.jpg';
-import font from '../../../apps/fonts/Valorant-Font.woff';
+import font1 from '../../../apps/fonts/valorant_font-webfont.woff2';
+import font2 from '../../../apps/fonts/valorant_font-webfont.woff';
 
 const GlobalStyle = createGlobalStyle`
 
-    @font-face {
-        font-family: "myFont" ;
-        src: url(${font}) format("woff");
-    }
+@font-face {
+    font-family: 'valorantregular';
+    src: url(${font1}) format('woff2'),
+         url(${font2}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 	
     body{
-        font-family: 'myFont';
+        font-family: 'valorantregular';
         padding: 0;
         margin: 0;
         
