@@ -11,12 +11,12 @@ export const AgentCardDiv = styled.div`
 
 export const ImageCard = styled.img`
 	background-color: black;
-	border-radius: 50px;
+	border-radius: 5vh;
 	cursor: pointer;
-	height: 300px;
+	height: 35vh;
 	position: relative;
 	transition: all 0.3s;
-	width: 300px;
+	width: 35vh;
 
 	&:hover {
 		filter: blur(5px);
@@ -26,18 +26,18 @@ export const ImageCard = styled.img`
 export const ImageName = styled.h1`
 	color: white;
 	cursor: pointer;
-	font-size: 40px;
+	font-size: 4vh;
 	margin: 0;
 	opacity: 0;
 	position: relative;
 	text-align: center;
-	transform: translateY(-170px);
+	transform: translateY(-18vh);
 	transition: 0.4s;
 `;
 
 export const AgentContainer = styled.div`
 	align-items: center;
-	column-gap: 50px;
+	column-gap: 5vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

@@ -11,25 +11,25 @@ export const AgentCardDiv = styled.div`
 `;
 
 export const ImageCard = styled.img`
-	height: 800px;
+	height: 90vh;
 	padding: 0;
 `;
 
 export const DescriptionCard = styled.div`
-	padding: 30px;
-	border-radius: 20px;
-	margin: 40px;
+	padding: 3vh;
+	border-radius: 2vh;
+	margin: 4vh;
 	background-color: ${(props) => props.bgColour1};
 	color: white;
 `;
 
 export const AgentsName = styled.h1`
-	font-size: 100px;
+	font-size: 10vh;
 	text-align: center;
 `;
 
 export const DescriptionText = styled.p`
-	font-size: 30px;
+	font-size: 3vh;
 `;
 
 export const BackgroundImageDiv = styled.div`
@@ -38,7 +38,7 @@ export const BackgroundImageDiv = styled.div`
 	justify-content: center;
 	background-image: url('${(props) => props.image}');
 	background-repeat: no-repeat;
-	background-position: 100px -100px;
+	background-position: 10vh -10vh;
 `;
 
 export const AbilityCard = styled.div`
@@ -49,17 +49,17 @@ export const AbilityCard = styled.div`
 export const AbilityRow = styled.div`
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 1vh;
 	justify-content: space-evenly;
 `;
 
 export const AbilityImage = styled.img`
-	width: 100px;
-	height: 100px;
+	width: 10vh;
+	height: 10vh;
 `;
 
 export const AbilityImageText = styled.div``;
 
 export const AbilityText = styled.h1`
-	font-size: 10px;
+	font-size: 1vh;
 `;
