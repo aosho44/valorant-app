@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../../../apps/images/valorant-background.jpg';
 import font1 from '../../../apps/fonts/valorant_font-webfont.woff2';
 import font2 from '../../../apps/fonts/valorant_font-webfont.woff';
 
@@ -22,17 +21,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100vh;
         width: 100vw;
         
-        
-        
 	}
-    html{
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background: url(${background}) no-repeat center center fixed;
-        flex-wrap: wrap;
-    }
 `;
 
 export default GlobalStyle;
