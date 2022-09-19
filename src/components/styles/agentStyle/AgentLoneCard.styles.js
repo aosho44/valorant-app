@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SingleAgentContainer = styled.div`
-	flex-wrap: wrap;
 	height: 100vh;
 `;
 
@@ -15,16 +14,29 @@ export const AgentCardDiv = styled.div`
 `;
 
 export const ImageCard = styled.img`
-	height: 90vh;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
 	padding: 0;
+	object-fit: cover;
 `;
 
 export const DescriptionCard = styled.div`
 	padding: 3vh;
-	border-radius: 2vh;
-	margin: 4vh;
 	background-color: ${(props) => props.bgColour1};
 	color: white;
+`;
+
+export const BackgroundImageDiv = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('${(props) => props.image}');
+	background-repeat: no-repeat;
+	background-size: 120vh;
+	height: 100vh;
+	width: 100vh;
+	background-position: center;
 `;
 
 export const AgentsName = styled.h1`
@@ -34,15 +46,6 @@ export const AgentsName = styled.h1`
 
 export const DescriptionText = styled.p`
 	font-size: 3vh;
-`;
-
-export const BackgroundImageDiv = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url('${(props) => props.image}');
-	background-repeat: no-repeat;
-	background-position: 10vh -10vh;
 `;
 
 export const AbilityCard = styled.div`
