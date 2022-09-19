@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import AllAgentsPage from './components/pages/Characters/AllAgentsPage';
 import SingleAgentsView from './components/pages/Characters/SingleAgentsView';
 import WeaponsPage from './components/pages/Weapons/WeaponsPage';
-import Footer from './components/pages/Footer/Footer';
 import Home from './components/pages/Home/Home';
 import MapsPage from './components/pages/Maps/MapsPage';
 import PageNotFound from './components/pages/PageNotFound/PageNotFound';
@@ -19,7 +18,6 @@ function App() {
 				<Route path="/weapons/" element={<WeaponsPage />} />
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
-			<Footer />
 			<GlobalStyle />
 		</div>
 	);
