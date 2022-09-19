@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const SingleAgentContainer = styled.div`
-	background-color: white;
+	flex-wrap: wrap;
+	height: 100vh;
 `;
 
 export const AgentCardDiv = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100vw;
 	background-color: ${(props) => props.bgColour1};
 `;
 
