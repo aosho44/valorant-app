@@ -18,7 +18,11 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'valorantregular';
         padding: 0;
         margin: 0;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100vw;
+        
+        
         
 	}
     html{
@@ -27,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
         -webkit-background-size: cover;
         background-size: cover;
         background: url(${background}) no-repeat center center fixed;
+        flex-wrap: wrap;
     }
 `;
 

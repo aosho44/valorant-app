@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const HomeButton = styled.button`
-	border: 10px;
+	border: 10vh;
 	font-family: valorantregular;
-	font-size: 100px;
-	padding: 10px;
+	font-size: 7vh;
+	padding: 0;
 	background: transparent;
-	margin-left: 10px;
+	margin-top: 5vh;
+	margin-left: 1vh;
 	cursor: pointer;
 
 	&:hover {
@@ -21,4 +22,5 @@ export const ButtonDiv = styled.div`
 	flex-direction: row;
 	gap: 10px;
 	justify-content: space-around;
+	flex-wrap: wrap;
 `;
